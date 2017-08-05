@@ -1,0 +1,83 @@
+{
+  "project": {
+    "version": "1.0.0-beta.28.3",
+    "name": "hospital"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css",
+        "assets/js/bootstrap/dist/css/bootstrap.min.css",
+        "assets/js/bootstrap-extension/css/bootstrap-extension.css",
+        "assets/js/sidebar-nav/dist/sidebar-nav.min.css",
+        "assets/css/animate/animate.css",
+        "assets/css/colors/gray.css",
+        "assets/css/style/style.min.css"
+      ],
+      "scripts": [
+        "assets/js/jquery/dist/jquery.min.js",
+        "assets/js/bootstrap/dist/js/tether.min.js",
+        "assets/js/bootstrap/dist/js/bootstrap.min.js",
+        "assets/js/bootstrap-extension/js/bootstrap-extension.min.js",
+        "assets/js/sidebar-nav/dist/sidebar-nav.min.js",
+        "assets/js/slim-scroll/jquery.slimscroll.js",
+        "assets/js/wave-effect/waves.js",
+        "assets/js/custom/custom.min.js",
+        "assets/js/styleswitcher/jQuery.style.switcher.js"
+      ],
+      "environments": {
+        "source": "environments/environment.ts",
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "files": "src/**/*.ts",
+      "project": "src/tsconfig.json"
+    },
+    {
+      "files": "e2e/**/*.ts",
+      "project": "e2e/tsconfig.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "prefixInterfaces": false,
+    "inline": {
+      "style": false,
+      "template": false
+    },
+    "spec": {
+      "class": false,
+      "component": true,
+      "directive": true,
+      "module": false,
+      "pipe": true,
+      "service": true
+    }
+  }
+}
